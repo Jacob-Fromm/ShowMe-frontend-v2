@@ -1,0 +1,99 @@
+$previewBackgroundColor: rgb(252, 110, 245);
+$primaryBackgroundColor: #1A1A1D;
+$secondaryBackgroundColor: #4E4e50;
+$thirdColor: #652232;
+$fourthColor: #950740;
+$fifthColor: #C3073F; 
+$shadow: #333333;
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+html, body {
+  height: 100%;
+  background-color: $primaryBackgroundColor;
+}
+
+.App {
+//  height: 0;
+  padding-bottom: 100%; /* 16:9 */
+  position: relative;
+    margin: 0 auto;
+    min-width: 700px;
+    // padding: 2vh 5vw;
+    background-color: $primaryBackgroundColor;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  color: $fifthColor;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Landing {
+    // @extend .App;
+    height: 100%;
+    padding-top: 0;
+    background: $primaryBackgroundColor;
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+.filter {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.25vh auto;
+    }
+    select {
+        width: 100%;
+        font-size: 2vmin;
+        height: 3vh;
+    }
+
+.comedian-preview {
+    color: white;
+    margin: 1.25vh auto;
+    &:hover, &:focus {
+        box-shadow: 0 0 10px $shadow;
+        transform: scale(1.01);
+        transition: .25s;
+    }
+    display: flex;
+    // align-items: center;
+    background-color: $secondaryBackgroundColor;
+    box-shadow: 0 0 5px $shadow;
+    border-radius: 10px;
+    button {
+        display: block;
+        font-size: 1.5vmin;
+        margin: 1.5vh auto;
+        align-self: baseline;
+        
+    }
+    .headshot {
+        box-shadow: 0 0 5px $shadow;
+        width: 40vw;
+        max-width: 300px;
+        border-radius: 10px;
+        width: 50%;
+    }
+    .event-info, .comedian-info {
+        @include flexCenter();
+        .event-details {
+            align-items: center;
+            height: 100px;
+        }
+    }
+}

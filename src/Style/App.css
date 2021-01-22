@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+  background-color: #1A1A1D;
+}
+
+.App {
+  padding-bottom: 100%;
+  /* 16:9 */
+  position: relative;
+  margin: 0 auto;
+  min-width: 700px;
+  background-color: #1A1A1D;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  color: #C3073F;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Landing {
+  height: 100%;
+  padding-top: 0;
+  background: #1A1A1D;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.filter {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.25vh auto;
+}
+
+select {
+  width: 100%;
+  font-size: 2vmin;
+  height: 3vh;
+}
+
+.comedian-preview {
+  color: white;
+  margin: 1.25vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #4E4e50;
+  -webkit-box-shadow: 0 0 5px #333333;
+          box-shadow: 0 0 5px #333333;
+  border-radius: 10px;
+}
+
+.comedian-preview:hover, .comedian-preview:focus {
+  -webkit-box-shadow: 0 0 10px #333333;
+          box-shadow: 0 0 10px #333333;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.comedian-preview button {
+  display: block;
+  font-size: 1.5vmin;
+  margin: 1.5vh auto;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.comedian-preview .headshot {
+  -webkit-box-shadow: 0 0 5px #333333;
+          box-shadow: 0 0 5px #333333;
+  width: 40vw;
+  max-width: 300px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.comedian-preview .event-info, .comedian-preview .comedian-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+.comedian-preview .event-info .event-details, .comedian-preview .comedian-info .event-details {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+/*# sourceMappingURL=App.css.map */
