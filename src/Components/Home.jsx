@@ -5,14 +5,14 @@ export default function Home(){
     return(
         <div>
             <div className="filter">
-                {/* <div className="filter-role">
+                <div className="filter-role">
                     <h2>I am a...</h2>
                     <label for="role"></label>
                     <select name="roles" id="roles">
                         <option value="Fan">Fan</option>
                         <option value="Comic">Comic</option>
                     </select>
-                </div> */}
+                </div>
                 <div className="filter-location">
                     <h2>Show me events in...</h2>
                     <label for="location"></label>

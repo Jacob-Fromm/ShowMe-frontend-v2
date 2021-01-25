@@ -1,6 +1,8 @@
 import React from "react"
+import { connect } from 'react-redux'
 
-export default function ComedianPreview(){
+function ComedianPreview(){
+    console.log("comedianpreview state", state.comics)
     return(
         <div className="comedian-preview">
             <div className="comedian-info">
@@ -20,3 +22,14 @@ export default function ComedianPreview(){
         </div>
     )
 }
+
+const msp = state => {
+    console.log("current redux state", state)
+    return { comics: state.comics }
+}
+
+// const mdp = dispatch => {
+//     return { followComic: (followObj, currentUser) => dispatch(followComic(followObj, currentUser)) }
+// }
+
+export default connect(msp)(ComedianPreview)

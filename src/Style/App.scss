@@ -29,6 +29,34 @@ html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.landing-container{
+    // display: flex;
+    // flex-direction: column;
+    background: $primaryBackgroundColor;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+.landing-header {
+    color: white;
+    #logo-image {
+        width: 100vh;
+        max-width: 3000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+// .landing-content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
 .header {
   color: $fifthColor;
   text-align: center;
@@ -38,29 +66,29 @@ html, body {
   color: #61dafb;
 }
 
-.Landing {
-    // @extend .App;
-    height: 100%;
-    padding-top: 0;
-    background: $primaryBackgroundColor;
-    margin: 0;
-    padding: 0;
-    height: 100%
-}
 
 .filter {
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     margin: 1.25vh auto;
-    }
+    
     select {
         width: 100%;
         font-size: 2vmin;
         height: 3vh;
     }
+}
+
+.imported-comedian-preview {
+    flex-direction: column;
+}
+
+
+
+
 
 .comedian-preview {
     color: white;
@@ -71,6 +99,7 @@ html, body {
         transition: .25s;
     }
     display: flex;
+    align-items: center;
     // align-items: center;
     background-color: $secondaryBackgroundColor;
     box-shadow: 0 0 5px $shadow;
